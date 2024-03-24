@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Poppins", sans-serif!important;
+}
+
+:root {
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
+}
+
+header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--Very-Pale-Cyan);
+    padding: 30px 0;
+}
+@media(max-width: 767px) {
+    header {
+        background-image: url("../images/bg-hero-mobile.svg");
+    }
+}
+header img {
+    width: 170px;
+}
+
+@media (max-width: 767px) {
+    header img {
+        width: 120px;
+    }
+}
+header span {
+    width: 200px;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 10px hsl(0deg 0% 83.61%);
+}
+
+@media (max-width: 767px) {
+    header span {
+        width: 120px;
+        padding: 5px 0;
+    }
+    header .header-top {
+        margin-bottom: 100px!important;
+    }
+}
+header h1 {
+    font-size: 35px;
+    line-height: 1.4;
+}
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+header p {
+    width: 100%;
+    max-width: 420px;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif; 
+    color: var(--Very-Dark-Cyan);
+
+}
+
+header button {
+    outline: none;
+    border: none;
+    width: 250px;
+    padding: 15px 0;
+    color: #fff;
+    background-color: var(--Pink);
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    header .build-community {
+        margin-bottom: 50px;
+    }
+}
+
+/* section */
+.grow-together ,
+.flow {
+    box-shadow: 0 0 10px hsl(0deg 0% 83.61%);
+    border-radius: 10px;
+    padding-left: 3rem;
+}
+@media(max-width: 767px) {
+    .grow-together {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding: 0 20px;
+        justify-content: center!important;
+    }
+
+    .flow {
+        flex-direction: column;
+        padding-left: 0px;
+        padding: 0 20px;
+        justify-content: center!important;
+    }
+}
+.grow-together .txt-grow ,
+.flow .txt-flow {
+    max-width: 400px;
+    width: 100%;
+
+}
+.grow-together .txt-grow h2 ,
+.flow .txt-flow h2 {
+    font-size: 23px;
+    color: var(--Very-Dark-Cyan);
+    font-weight: 700;
+}
+.grow-together p ,
+.flow .txt-flow p{
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-family: "Open Sans", sans-serif !important; 
+    line-height: 1.5;
+}
+
+.grow-together img ,
+.flow img{
+    width: 100%;
+    max-width: 370px;
+}
+@media(max-width: 767px) {
+    .grow-together img ,
+    .flow img {
+        max-width: 300px;
+        margin-bottom: 50px;
+    }
+}
+
+section {
+    margin-bottom: 16rem;
+}
+/* start footer */
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    padding-top: 6rem;
+}
+
+footer .get-started {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -35%;
+    width: 100%;
+    max-width: 550px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px hsl(192deg 100% 9% / 18%);
+}
+
+@media (max-width: 767px) {
+    footer .get-started {
+        max-width: 300px;
+        height: 160px;
+        top: -15%;
+    }
+}
+
+.get-started h3 {  
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+
+@media (max-width: 767px) {
+    .get-started h3 {
+        font-size: 16px;
+    }
+}
+.get-started span {  
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 17px;
+    padding: 17px 25px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--Pink);
+    border-radius: 50px;
+    font-size: 13px;
+}
+@media (max-width: 767px) {
+    .get-started span {
+        max-width: 200px;
+        padding: 14px 25px;
+        font-size: 13px;
+    }
+}
+
+.huddle-footer .location img,
+.huddle-footer .phone img ,
+.huddle-footer .mail img{
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+}
+
+.huddle-footer .location p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif !important; 
+    line-height: 1.7;
+}
+
+.huddle-footer .phone span ,
+.huddle-footer .mail span {
+    font-family: "Open Sans", sans-serif !important; 
+    font-size: 14px;
+}
+ul li {
+    font-family: "Open Sans", sans-serif !important; 
+    font-size: 15px;
+}
+
+.contact a i  {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+}
+@media (max-width: 767px) {
+    .contact {
+        justify-content: center;
+    }
+}
+.huddle-footer .row {
+    margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+    .huddle-footer .row {
+        margin-bottom: 0;
+    }
+}
+.copy-huddle {
+    font-family: "Open Sans", sans-serif !important; 
+    font-size: 13px;
+    justify-content: flex-end;
+}
+@media (max-width: 767px) {
+    .copy-huddle {
+        justify-content: center;
+    }
+}
+/* end footer */
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements 
+by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
